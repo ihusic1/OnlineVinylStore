@@ -49,4 +49,11 @@ public class AppTest {
         assertEquals(10, record.getPrice());
     }
 
+    @Test
+    public void equals() {
+        record.setId(1);
+        Record otherRecord = new Record();
+        otherRecord.setId(1);
+        assertTrue(record.equals(otherRecord));
+    }
 }
