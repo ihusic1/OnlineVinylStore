@@ -92,23 +92,7 @@ public class OrderController {
         }
 
     }
-  /*public void confirm(ActionEvent actionEvent) throws IOException
-    {
-        try {
-            Stage stage = new Stage();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/confirmorder.fxml"));
-            ConfirmOrderController confirmOrderController = new ConfirmOrderController();
-            loader.setController(confirmOrderController);
-            Parent root = loader.load();
-            stage.setTitle("Confirm Order");
-            stage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
-            stage.setResizable(false);
-            //stage.setOnHiding();
-            stage.show();
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
-    }*/
+
 
     public void cancelAction(ActionEvent actionEvent) {
         Stage stage =(Stage)cancel.getScene().getWindow();
