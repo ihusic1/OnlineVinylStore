@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e9dfb1;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.controllers.HomeController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="105.0" minHeight="0.0" prefHeight="35.19999389648437" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="372.79998779296875" minHeight="10.0" prefHeight="345.60003662109375" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="51.60001220703123" minHeight="8.800012207031273" prefHeight="19.999963378906273" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <HBox alignment="CENTER_RIGHT" prefHeight="82.0" prefWidth="600.0" style="-fx-background-color: whit #e9dfb1e;" GridPane.columnSpan="2">
+            <children>
+                <HBox alignment="CENTER" prefHeight="35.0" prefWidth="190.0" spacing="15.0">
+                    <children>
+                        <Button fx:id="AboutUs" mnemonicParsing="false" onAction="#openAboutUsWindow" style="-fx-background-color: #e9dfb1;" text="About Us">
+                            <font>
+                                <Font name="Century Gothic" size="13.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="Contact" blendMode="SRC_ATOP" mnemonicParsing="false" onAction="#openContactWindow" style="-fx-background-color: #e9dfb1;" text="Contact">
+                            <font>
+                                <Font name="Century Gothic" size="13.0" />
+                            </font>
+                        </Button>
+                    </children>
+                    <HBox.margin>
+                        <Insets top="15.0" />
+                    </HBox.margin>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="40.0">
+                    <children>
+                        <ImageView fitHeight="52.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/logo3.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="20.0" top="15.0" />
+                    </HBox.margin>
+                </HBox>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #ffff;" GridPane.columnSpan="2" GridPane.rowIndex="2">
+            <children>
+                <Label text="Retro Replay 2023" />
+            </children>
+        </HBox>
+        <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+            <children>
+                <ImageView fitHeight="334.0" fitWidth="556.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@../images/homebackground.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+            <children>
+                <Label text="RETRO REPLAY">
+                    <HBox.margin>
+                        <Insets left="50.0" top="115.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Century Gothic Bold" size="36.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+            <children>
+                <Label text="All your favorite hits in one place">
+                    <HBox.margin>
+                        <Insets left="60.0" top="174.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Century Gothic" size="13.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox alignment="BOTTOM_CENTER" prefHeight="346.0" prefWidth="260.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+            <children>
+                <VBox alignment="CENTER" prefHeight="196.0" prefWidth="294.0" spacing="8.0">
+                    <children>
+                        <Label text="Log In and spin the beats of endless records!">
+                            <font>
+                                <Font name="Century Gothic" size="13.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="LogIn" mnemonicParsing="false" onAction="#openLogInWindow" style="-fx-background-color: #2d625f;" text="Log In" textFill="WHITE">
+                            <font>
+                                <Font name="Century Gothic Bold" size="13.0" />
+                            </font>
+                        </Button>
+                    </children>
+                    <HBox.margin>
+                        <Insets top="200.0" />
+                    </HBox.margin>
+                </VBox>
+                <HBox alignment="BOTTOM_RIGHT" prefHeight="336.0" prefWidth="251.0">
+                    <children>
+                        <Label prefHeight="16.0" prefWidth="162.0" text="Don't have an account?">
+                            <font>
+                                <Font name="Century fGothic" size="13.0" />
+                            </font>
+                            <padding>
+                                <Insets bottom="5.0" />
+                            </padding>
+                        </Label>
+                        <Button fx:id="SignUp" mnemonicParsing="false" onAction="#openSignupWindow" style="-fx-background-color: #e9dfb1;" text="Sign Up" underline="true">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Button>
+                    </children>
+                    <HBox.margin>
+                        <Insets bottom="5.0" />
+                    </HBox.margin>
+                </HBox>
+            </children>
+        </HBox>
+    </children>
+</GridPane>
+
+
+
