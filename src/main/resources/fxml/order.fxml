@@ -1,14 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="fxml.Order"
-            prefHeight="400.0" prefWidth="600.0">
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.controllers.OrderController">
+    <center>
+        <HBox BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="402.0" fitWidth="235.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/orderpic.jpg" />
+                    </image>
+                </ImageView>
+                <VBox prefHeight="402.0" prefWidth="372.0" style="-fx-background-color: light grey;">
+                    <children>
+                        <Button fx:id="cancel" mnemonicParsing="false" onAction="#cancelAction" style="-fx-background-color: light grey;" text="&lt;&lt;">
+                            <font>
+                                <Font name="Century Gothic Bold" size="14.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="20.0" top="20.0" />
+                            </VBox.margin>
+                        </Button>
+                        <Label text="Confirm Your Order">
+                            <font>
+                                <Font name="Century Gothic" size="30.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="40.0" top="10.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label text="Title">
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="20.0" right="5.0" top="20.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                            <font>
+                                <Font name="Century Gothic Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="recordTitle" textFill="#5ca64c">
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets left="100.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Century Gothic Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label text="Artist">
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="20.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                            <font>
+                                <Font name="Century Gothic Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="recordArtist" textFill="#5ca64c">
+                            <VBox.margin>
+                                <Insets left="100.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font name="Century Gothic Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label text="Price">
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="20.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                            <font>
+                                <Font name="Century Gothic Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="recordPrice" textFill="#5ca64c">
+                            <VBox.margin>
+                                <Insets left="100.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                            <font>
+                                <Font name="Century Gothic Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="yes" defaultButton="true" mnemonicParsing="false" onAction="#confirm" style="-fx-background-color: #b8e3d1; -fx-border-color: black;" text="Confirm">
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="160.0" right="5.0" top="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Century Gothic" size="12.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </center>
 
-</AnchorPane>
+</BorderPane>
