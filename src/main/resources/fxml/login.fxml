@@ -1,14 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="fxml.Login"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<GridPane fx:id="LogIn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.controllers.LoginController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <VBox alignment="CENTER" prefHeight="400.0" prefWidth="227.0">
+                    <children>
+                        <ImageView fitHeight="400.0" fitWidth="272.0" pickOnBounds="true">
+                            <image>
+                                <Image url="@../images/loginbackground.jpg" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </VBox>
+                <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="366.0" style="-fx-background-color: #ebdfc9;">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="334.0">
+                            <VBox.margin>
+                                <Insets top="20.0" />
+                            </VBox.margin>
+                            <children>
+                                <Button fx:id="Undo" mnemonicParsing="false" onAction="#closeWindow" style="-fx-background-color: #ebdfc9;" text="&lt;&lt;">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="15.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <Label text="Log In">
+                            <font>
+                                <Font name="Century Gothic" size="30.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets top="20.0" />
+                            </VBox.margin>
+                        </Label>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="63.0" prefWidth="329.0">
+                            <children>
+                                <VBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="186.0">
+                                    <children>
+                                        <Label text="E-mail:">
+                                            <font>
+                                                <Font name="Century Gothic" size="12.0" />
+                                            </font></Label>
+                                        <TextField fx:id="emailField" />
+                                        <Label fx:id="badEmail" textFill="#e11616">
+                                            <font>
+                                                <Font name="Century Gothic Bold" size="11.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </VBox>
+                            </children>
+                            <VBox.margin>
+                                <Insets top="20.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="90.0" prefWidth="329.0">
+                            <children>
+                                <VBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="192.0">
+                                    <children>
+                                        <Label text="Password:" />
+                                        <PasswordField fx:id="passwordField" prefHeight="26.0" prefWidth="182.0" />
+                                        <Label fx:id="badPassword" textFill="#e11616">
+                                            <font>
+                                                <Font name="Century Gothic" size="11.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="errorLabel" textFill="#e11616">
+                                            <VBox.margin>
+                                                <Insets left="80.0" top="10.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font name="Century Gothic" size="11.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="48.0" prefWidth="261.0" spacing="30.0">
+                            <children>
+                                <Button fx:id="OK" mnemonicParsing="false" onAction="#actionSubmit" prefHeight="23.0" prefWidth="47.0" style="-fx-background-color: #2d625f;" text="OK" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</GridPane>
