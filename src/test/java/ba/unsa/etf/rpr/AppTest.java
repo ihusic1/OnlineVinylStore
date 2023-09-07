@@ -112,4 +112,19 @@ public class AppTest {
     private UserManager userManager = new UserManager();
     private GenreManager genreManager = new GenreManager();
 
+
+    @BeforeEach
+    public void setUp() {
+        user.setId(1);
+        user.setFirstName("Ilma");
+        user.setLastName("Husic");
+        user.setAddress("Rate Dugonjica 182");
+        user.setPhone_number(Integer.parseInt("61509381"));
+        user.setEmail("ihusic1@etf.unsa.ba");
+        user.setPassword("project123");
+        MockitoAnnotations.openMocks(this);
+        userManager = new UserManager();
+        genreManager = Mockito.mock(GenreManager.class);
+    }
+
 }
