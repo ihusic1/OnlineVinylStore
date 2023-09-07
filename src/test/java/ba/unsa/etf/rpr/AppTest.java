@@ -57,6 +57,7 @@ public class AppTest {
         assertTrue(record.equals(otherRecord));
     }
 
+    //test za user konstruktor
     @Test
     public void testUserConstructor() {
         User user = new User(1, "Ilma", "Husic", "project123", "ihusic1@etf.unsa.ba", 61509381, "Rate Dugonjica 182");
