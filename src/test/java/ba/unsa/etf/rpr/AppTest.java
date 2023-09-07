@@ -56,4 +56,16 @@ public class AppTest {
         otherRecord.setId(1);
         assertTrue(record.equals(otherRecord));
     }
+
+    @Test
+    public void testUserConstructor() {
+        User user = new User(1, "Ilma", "Husic", "project123", "ihusic1@etf.unsa.ba", 61509381, "Rate Dugonjica 182");
+        assertEquals(1, user.getId());
+        assertEquals("Ilma", user.getFirstName());
+        assertEquals("Husic", user.getLastName());
+        assertEquals("project123", user.getPassword());
+        assertEquals("ihusic1@etf.unsa.ba", user.getEmail());
+        assertEquals(61509381, user.getPhone_number());
+        assertEquals("Rate Dugonjica 182", user.getAddress());
+    }
 }
