@@ -94,7 +94,7 @@ public class UserDaoSQLImpl extends AbstractDao<User> implements UserDao {
         try {
             PreparedStatement stmt = getConnection().prepareStatement(insert, Statement.RETURN_GENERATED_KEYS);
             ResultSet rs = stmt.executeQuery();
-            if(rs.next()) { // result set is iterator.
+            if(rs.next()) {
                 return getById(rs.getInt(1));
             }
             rs.close();
@@ -104,17 +104,4 @@ public class UserDaoSQLImpl extends AbstractDao<User> implements UserDao {
         return null;
     }
 
-    /*public User findEmail(String emailField) throws RecordException {
-        String query = "SELECT id FROM User WHERE email = ?";
-        try (PreparedStatement stmt = getConnection().prepareStatement(query)) {
-            stmt.setString(1, emailField);
-            ResultSet rs = stmt.executeQuery();
-            if (rs.next()) {
-                return getById(rs.getInt("id"));
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }*/
 }
