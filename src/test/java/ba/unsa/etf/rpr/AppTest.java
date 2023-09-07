@@ -89,4 +89,19 @@ public class AppTest {
         assertEquals("adzinic1@etf.unsa.ba", user.getEmail());
         assertEquals("rpr123", user.getPassword());
     }
+
+
+    @Test
+    public void validateGenreName() throws RecordException {
+        // Test for a valid genre name
+        GenreManager genreManager = new GenreManager();
+        genreManager.validateGenreName("Blues");
+        // Test for a name that is too short
+        try {
+            genreManager.validateGenreName("B");
+            fail("Expected RecordException was not thrown");
+        } catch (RecordException e) {
+            assertEquals("Genre name must be between 3 and 50 chars", e.getMessage());
+        }
+    }
 }
