@@ -140,4 +140,9 @@ public class AppTest {
         mockedFactory.close();
     }
 
+    @Test
+    public void addTest() throws RecordException {
+        userDao.add(user);
+        verify(userDao).add(user);
+    }
 }
