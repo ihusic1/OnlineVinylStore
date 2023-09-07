@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="fxml.Confirmorder"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="153.0" prefWidth="263.0" xmlns="http://javafx.com/javafx/17.0.8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.controllers.ConfirmOrderController">
 
+
+
+    <children>
+        <Label layoutX="49.0" layoutY="69.0" prefHeight="28.0" prefWidth="187.0" text="Your order is confirmed!" textFill="#5ca64c">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <font>
+                <Font name="Century Gothic Bold" size="14.0" />
+            </font>
+        </Label>
+        <Button fx:id="close" defaultButton="true" layoutX="200.0" layoutY="114.0" mnemonicParsing="false" onAction="#closeAction" style="-fx-background-color: #b8e3d1; -fx-border-color: black;" text="Close">
+            <font>
+                <Font name="Century Gothic" size="12.0" />
+            </font></Button>
+        <HBox alignment="TOP_RIGHT" layoutX="-1.0" layoutY="-2.0" prefHeight="40.0" prefWidth="275.0" style="-fx-background-color: #adbab5;">
+            <children>
+                <ImageView fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/logo3.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets right="5.0" />
+                    </HBox.margin>
+                </ImageView>
+            </children>
+        </HBox>
+    </children>
 </AnchorPane>
