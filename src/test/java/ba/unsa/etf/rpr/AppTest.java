@@ -42,7 +42,6 @@ public class AppTest {
         record.setTitle("Record A");
         assertEquals("Record A", record.getTitle());
     }
-
     @Test
     public void getPrice() {
         record.setPrice(10);
@@ -57,7 +56,8 @@ public class AppTest {
         assertTrue(record.equals(otherRecord));
     }
 
-    //test za user konstruktor
+
+    //User konstruktor
     @Test
     public void testUserConstructor() {
         User user = new User(1, "Ilma", "Husic", "project123", "ihusic1@etf.unsa.ba", 61509381, "Rate Dugonjica 182");
@@ -69,7 +69,6 @@ public class AppTest {
         assertEquals(61509381, user.getPhone_number());
         assertEquals("Rate Dugonjica 182", user.getAddress());
     }
-
 
     @Test
     public void testUserSetterGetter() {
@@ -89,7 +88,6 @@ public class AppTest {
         assertEquals("adzinic1@etf.unsa.ba", user.getEmail());
         assertEquals("rpr123", user.getPassword());
     }
-
 
     @Test
     public void validateGenreName() throws RecordException {
@@ -127,7 +125,11 @@ public class AppTest {
         genreManager = Mockito.mock(GenreManager.class);
     }
 
-    //registration test
+
+    /**
+     * This method is testing registration
+     * @throws RecordException
+     */
     @Test
     void signup() throws RecordException {
         User user = new User(1, "Ilma", "Husic", "project123", "ihusic1@etf.unsa.ba", "61509381", "Rate Dugonjica 182");
@@ -139,19 +141,16 @@ public class AppTest {
         assertEquals(expected, actual);
         mockedFactory.close();
     }
-
     @Test
     public void addTest() throws RecordException {
         userDao.add(user);
         verify(userDao).add(user);
     }
-
     @Test
     void deleteTest() throws Exception {
         userDao.delete(1);
         verify(userDao).delete(1);
     }
-
 
     @Test
     void addNewGenre() throws RecordException {
