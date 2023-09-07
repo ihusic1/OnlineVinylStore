@@ -104,4 +104,12 @@ public class AppTest {
             assertEquals("Genre name must be between 3 and 50 chars", e.getMessage());
         }
     }
+
+    @Mock
+    private UserDao userDao;
+    public User user = new User();
+    private UserDaoSQLImpl usersDaoSQLMock = Mockito.mock(UserDaoSQLImpl.class);
+    private UserManager userManager = new UserManager();
+    private GenreManager genreManager = new GenreManager();
+
 }
