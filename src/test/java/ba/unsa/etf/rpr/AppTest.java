@@ -127,4 +127,17 @@ public class AppTest {
         genreManager = Mockito.mock(GenreManager.class);
     }
 
+    //registration test
+    @Test
+    void signup() throws RecordException {
+        User user = new User(1, "Ilma", "Husic", "project123", "ihusic1@etf.unsa.ba", "61509381", "Rate Dugonjica 182");
+        MockedStatic<DaoFactory> mockedFactory = Mockito.mockStatic(DaoFactory.class);
+        mockedFactory.when(DaoFactory::userDao).thenReturn(usersDaoSQLMock);
+        User expected = new User();
+        when(usersDaoSQLMock.add(Mockito.any(User.class))).thenReturn(expected);
+        User actual = usersDaoSQLMock.add(new User());
+        assertEquals(expected, actual);
+        mockedFactory.close();
+    }
+
 }
