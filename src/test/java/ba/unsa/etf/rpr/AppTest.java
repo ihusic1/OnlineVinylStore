@@ -70,6 +70,7 @@ public class AppTest {
         assertEquals("Rate Dugonjica 182", user.getAddress());
     }
 
+
     @Test
     public void testUserSetterGetter() {
         User user = new User();
