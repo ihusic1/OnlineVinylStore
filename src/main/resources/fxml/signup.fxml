@@ -14,10 +14,7 @@
 <?import javafx.scene.text.Font?>
 
 <BorderPane fx:id="registration" prefHeight="456.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.controllers.SignupController">
-    <stylesheets>
-        <URL value="@/css/signup.css" />
 
-    </stylesheets>
     <top>
         <HBox prefHeight="456.0" prefWidth="616.0" style="-fx-background-color: #036e70;" BorderPane.alignment="CENTER">
             <children>
