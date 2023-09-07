@@ -69,4 +69,23 @@ public class AppTest {
         assertEquals(61509381, user.getPhone_number());
         assertEquals("Rate Dugonjica 182", user.getAddress());
     }
+
+    @Test
+    public void testUserSetterGetter() {
+        User user = new User();
+        user.setId(2);
+        user.setFirstName("Ajla");
+        user.setLastName("Dzinic");
+        user.setAddress("Hadzici 22");
+        user.setPhone_number(62345678);
+        user.setEmail("adzinic1@etf.unsa.ba");
+        user.setPassword("rpr123");
+        assertEquals(2, user.getId());
+        assertEquals("Ajla", user.getFirstName());
+        assertEquals("Dzinic", user.getLastName());
+        assertEquals("Hadzici 22", user.getAddress());
+        assertEquals(62345678, user.getPhone_number());
+        assertEquals("adzinic1@etf.unsa.ba", user.getEmail());
+        assertEquals("rpr123", user.getPassword());
+    }
 }
