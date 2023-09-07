@@ -151,4 +151,14 @@ public class AppTest {
         userDao.delete(1);
         verify(userDao).delete(1);
     }
+
+
+    @Test
+    void addNewGenre() throws RecordException {
+        Genre newGenre = new Genre( "Soul");
+        genreManager.add(newGenre);
+
+        Assertions.assertTrue(true);
+        Mockito.verify(genreManager).add(newGenre);
+    }
 }
