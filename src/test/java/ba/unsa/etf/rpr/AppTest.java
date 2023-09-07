@@ -43,5 +43,9 @@ public class AppTest {
         assertEquals("Record A", record.getTitle());
     }
 
+    public void getPrice() {
+        record.setPrice(10);
+        assertEquals(10, record.getPrice());
+    }
 
 }
