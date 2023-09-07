@@ -1,14 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="fxml.Signup"
-            prefHeight="400.0" prefWidth="600.0">
+<BorderPane fx:id="registration" prefHeight="456.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.controllers.SignupController">
+    <stylesheets>
+        <URL value="@/css/signup.css" />
 
-</AnchorPane>
+    </stylesheets>
+    <top>
+        <HBox prefHeight="456.0" prefWidth="616.0" style="-fx-background-color: #036e70;" BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="CENTER" prefHeight="377.0" prefWidth="280.0" spacing="10.0" style="-fx-background-color: #036e70;">
+                    <children>
+                        <Button fx:id="Undo" mnemonicParsing="false" onAction="#closeWindow" style="-fx-background-color: #036e70;" text="&lt;&lt;" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets right="240.0" top="20.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Century Gothic Bold" size="15.0" />
+                            </font>
+                        </Button>
+                        <Label prefHeight="0.0" prefWidth="108.0" text="Sign Up" textFill="WHITE">
+                            <font>
+                                <Font name="Century Gothic" size="30.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Label>
+                        <VBox prefHeight="48.0" prefWidth="280.0">
+                            <children>
+                                <Label text="First Name:" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic" size="12.0" />
+                                    </font></Label>
+                                <TextField fx:id="firstNameField" prefHeight="94.0" prefWidth="280.0" />
+                                <Label fx:id="firstNameError" textFill="#e11616">
+                                    <font>
+                                        <Font name="Century Gothic" size="11.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="128.0" prefHeight="0.0" prefWidth="280.0">
+                            <children>
+                                <Label text="Last Name:" textFill="WHITE" />
+                                <TextField fx:id="lastNameField" prefHeight="110.0" prefWidth="280.0" />
+                                <Label fx:id="lastNameError" textFill="#e11616">
+                                    <font>
+                                        <Font name="Century Gothic" size="11.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="287.0" prefHeight="33.0" prefWidth="280.0">
+                            <children>
+                                <Label text="E-mail:" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic" size="12.0" />
+                                    </font></Label>
+                                <TextField fx:id="emailField" />
+                                <Label fx:id="emailError" textFill="#e11616">
+                                    <font>
+                                        <Font name="Century Gothic" size="11.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="332.0" prefHeight="50.0" prefWidth="280.0">
+                            <children>
+                                <Label text="Password:" textFill="WHITE" />
+                                <PasswordField fx:id="passwordField" />
+                                <Label fx:id="passwordError" textFill="#e11616">
+                                    <font>
+                                        <Font name="Century Gothic" size="11.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="363.0" prefHeight="80.0" prefWidth="280.0">
+                            <children>
+                                <Label text="Phone number:" textFill="WHITE" />
+                                <TextField fx:id="phoneField" />
+                                <Label fx:id="phoneError" textFill="#e11616">
+                                    <font>
+                                        <Font name="Century Gothic" size="11.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="384.0" prefHeight="200.0" prefWidth="100.0">
+                            <children>
+                                <Label text="Address:" textFill="WHITE" />
+                                <TextField fx:id="addressField" />
+                                <Label fx:id="addressError" textFill="#e11616">
+                                    <font>
+                                        <Font name="Century Gothic" size="11.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Button fx:id="OK" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#actionSubmit" style="-fx-background-color: #941b1f;" text="OK" textFill="WHITE">
+                                    <HBox.margin>
+                                        <Insets bottom="20.0" left="120.0" />
+                                    </HBox.margin>
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="12.0" />
+                                    </font></Button>
+                            </children>
+                        </HBox>
+                    </children>
+                    <HBox.margin>
+                        <Insets left="70.0" right="10.0" />
+                    </HBox.margin>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="456.0" prefWidth="218.0" style="-fx-background-color: #036e70;">
+                    <children>
+                        <ImageView fitHeight="325.0" fitWidth="256.0" pickOnBounds="true">
+                            <image>
+                                <Image url="@../images/signupbackground.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </top>
+</BorderPane>
