@@ -145,4 +145,10 @@ public class AppTest {
         userDao.add(user);
         verify(userDao).add(user);
     }
+
+    @Test
+    void deleteTest() throws Exception {
+        userDao.delete(1);
+        verify(userDao).delete(1);
+    }
 }
