@@ -37,4 +37,5 @@ Before running the application, make sure you have the following software instal
   
 ## Installation
 1. Clone this repository to your local machine:
-   [git clone] https://github.com/ihusic1/OnlineVinylStore.git
+    ```bash
+git clone https://github.com/ihusic1/OnlineVinylStore.git
