@@ -35,8 +35,9 @@ Before running the application, make sure you have the following software instal
 * MySQL Server  
   
   
-## Installation
+## Getting Started
 1. Clone this repository to your local machine:
 ```
 git clone https://github.com/ihusic1/OnlineVinylStore.git
 ```
+2. 
