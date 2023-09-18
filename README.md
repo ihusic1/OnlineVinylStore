@@ -36,3 +36,5 @@ Before running the application, make sure you have the following software instal
   
   
 ## Installation
+1. Clone this repository to your local machine:
+
