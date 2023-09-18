@@ -54,4 +54,8 @@ mvn clean javafx:run
 ## Built With
 * Intellij IDEA
 * Scene Builder
-* MySQL Workbench
+* MySQL Workbench  
+  
+  
+## Contact
+If you have any questions or suggestions, feel free to contact us at @ihusic1@etf.unsa.ba
