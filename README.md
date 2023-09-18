@@ -42,4 +42,4 @@ git clone https://github.com/ihusic1/OnlineVinylStore.git
 ```
 2. Open the project in Intellij IDEA
 3. In the project structure, navigate to "src" directory and open the Main class
-4. 
+4. Run the Main class with the click of a green play button or press Shift+F10
