@@ -25,4 +25,7 @@ The user panel provides user with all the information they need to search for th
 * Title of the vinyl record
 * The name of the artist 
 * Genre of the record
-* Price of the record
+* Price of the record  
+  
+  
+##Prerequisites
