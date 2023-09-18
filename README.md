@@ -29,3 +29,4 @@ The user panel provides user with all the information they need to search for th
   
   
 ## Prerequisites
+Before running the application, make sure you have the following softwares installed:
