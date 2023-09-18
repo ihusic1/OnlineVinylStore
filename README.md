@@ -41,4 +41,5 @@ Before running the application, make sure you have the following software instal
 git clone https://github.com/ihusic1/OnlineVinylStore.git
 ```
 2. Open the project in Intellij IDEA
-3. 
+3. In the project structure, navigate to "src" directory and open the Main class
+4. 
