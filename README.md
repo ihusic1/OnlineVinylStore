@@ -47,6 +47,6 @@ git clone https://github.com/ihusic1/OnlineVinylStore.git
   
 You can also run the program by typing in the following commands in terminal:  
 ```
--mvn clean install  
--mvn clean javafx:run
+mvn clean install  
+mvn clean javafx:run
 ```
