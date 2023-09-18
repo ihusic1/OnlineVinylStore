@@ -20,6 +20,7 @@ The application is designed to provide a user-friendly interface for those who a
 * View the cart with previously ordered vinyl records  
   
   
+  
 ## User Panel
 The user panel provides user with all the information they need to search for the record they'd like to purchase, including:
 * Title of the vinyl record
@@ -33,6 +34,7 @@ Before running the application, make sure you have the following software instal
 * Java Development Kit (JDK) 17
 * Apache Maven
 * MySQL Server  
+  
   
   
 ## Getting Started
@@ -51,11 +53,12 @@ mvn clean install
 mvn clean javafx:run
 ```  
   
+  
 ## Built With
 * Intellij IDEA
 * Scene Builder
 * MySQL Workbench  
-  
-  
+   
+
 ## Contact
 If you have any questions or suggestions, feel free to contact us at ihusic1@etf.unsa.ba
