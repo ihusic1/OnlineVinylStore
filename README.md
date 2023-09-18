@@ -13,5 +13,6 @@ The application is designed to provide a user-friendly interface for those who a
 * Sign Up 
 * Log In for registered users
 * Browse through the vinyl list from our database
-* Search vinyls by name
+* Search vinyl records by name
 * Search vinyls by genre
+* View detailed information about each vinyl, includinf
