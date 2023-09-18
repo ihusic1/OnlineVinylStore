@@ -17,3 +17,4 @@ The application is designed to provide a user-friendly interface for those who a
 * Search vinyl records by genre
 * View detailed information about each vinyl records, including title, artist, genre and price
 * Add vinyl records to a shopping cart
+* View the cart with previously ordered vinyl records
