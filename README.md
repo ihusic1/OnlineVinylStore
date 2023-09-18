@@ -52,3 +52,6 @@ mvn clean javafx:run
 ```  
   
 ## Built With
+* Intellij IDEA
+* Scene Builder
+* MySQL Workbench
