@@ -45,6 +45,8 @@ git clone https://github.com/ihusic1/OnlineVinylStore.git
 4. Run the Main class with the click of a green play button or press Shift+F10
   
   
-You can also run the program by typing in the following commands in terminal:
-mvn clean install
-mvn clean javafx:run
+You can also run the program by typing in the following commands in terminal:  
+```
+-mvn clean install  
+-mvn clean javafx:run
+```
