@@ -39,3 +39,4 @@ Before running the application, make sure you have the following software instal
 1. Clone this repository to your local machine:
     ```bash
 git clone https://github.com/ihusic1/OnlineVinylStore.git
+```
