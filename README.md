@@ -58,4 +58,4 @@ mvn clean javafx:run
   
   
 ## Contact
-If you have any questions or suggestions, feel free to contact us at @ihusic1@etf.unsa.ba
+If you have any questions or suggestions, feel free to contact us at ihusic1@etf.unsa.ba
