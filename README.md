@@ -12,3 +12,4 @@ The application is designed to provide a user-friendly interface for those who a
 ## Features
 * Sign Up 
 * Log In for registered users
+* Browse through the vinyl list from our database
