@@ -24,3 +24,4 @@ The application is designed to provide a user-friendly interface for those who a
 The user panel provides user with all the information they need to search for the record they'd like to purchase, including:
 * Title of the vinyl record
 * The name of the artist 
+* Genre of the record
