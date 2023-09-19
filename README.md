@@ -61,7 +61,7 @@ mvn clean javafx:run
    
 
 ## Contact
-If you have any questions or suggestions, feel free to contact us at ihusic1@etf.unsa.ba
+If you have any questions or suggestions, please feel free to contact us at ihusic1@etf.unsa.ba
   
   
 ## Interface Preview
@@ -70,5 +70,31 @@ If you have any questions or suggestions, feel free to contact us at ihusic1@etf
 ![Alt](src/main/resources/screenshots/HomePageScreenshot.png)
   
   
+  
+### SignUp
+![Alt](src/main/resources/screenshots/SignUpScreenshot.png)  
+  
+  
+
 ### LogIn 
 ![Alt](src/main/resources/screenshots/LogInScreenshot.png)
+  
+  
+### Failed LogIn
+![Alt](src/main/resources/screenshots/LoginBadScreenshot.png)  
+  
+  
+### Main Page  
+![Alt](src/main/resources/screenshots/RecordsScreenshot.png)  
+  
+  
+### My Orders Page
+![Alt](src/main/resources/screenshots/OrdersScreenshot.png)  
+  
+  
+### About Us
+![Alt](src/main/resources/screenshots/AboutUsScreenshot.png)  
+  
+  
+### Contact Us
+![Alt](src/main/resources/screenshots/ContactScreenshot.png)
