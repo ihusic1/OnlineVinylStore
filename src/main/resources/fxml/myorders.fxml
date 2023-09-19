@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fefff9;" xmlns="http://javafx.com/javafx/17.0.8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.controllers.MyOrdersController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fefff9;" xmlns="http://javafx.com/javafx/17.0.8" xmlns:fx="http://javafx.com/fxml/1">
     <children>
         <Label layoutX="144.0" layoutY="50.0" text="My Orders">
             <padding>
