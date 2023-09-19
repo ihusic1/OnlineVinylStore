@@ -71,4 +71,4 @@ If you have any questions or suggestions, feel free to contact us at ihusic1@etf
   
   
 ### LogIn 
-![Alt](src/main/resources/screenshots/LogInScreenshot.png)
+![Alt](src/main/resources/screenshots/HomePageScreenshot.png)
