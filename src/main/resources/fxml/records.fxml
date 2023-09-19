@@ -20,7 +20,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.controllers.RecordsController">
+<BorderPane xmlns="http://javafx.com/javafx/17.0.8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.controllers.RecordsController">
     <left>
         <GridPane prefWidth="637.0" style="-fx-background-color: #ad3c32;" styleClass="grid" BorderPane.alignment="CENTER">
             <columnConstraints>

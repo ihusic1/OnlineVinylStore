@@ -167,6 +167,4 @@ public class RecordsController {
         Stage stage =(Stage)Undo.getScene().getWindow();
         stage.close();
     }
-
-
 }

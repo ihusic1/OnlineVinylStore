@@ -28,7 +28,7 @@ public class AppFX extends Application {
             HomeController homeController = new HomeController();
             loader.setController(homeController);
             Parent root = loader.load();
-            stage.setTitle("Online Record Store");
+            stage.setTitle("Online Vinyl Store");
             stage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
             stage.setResizable(false);
             stage.show();
