@@ -67,8 +67,8 @@ If you have any questions or suggestions, feel free to contact us at ihusic1@etf
 ## Interface Preview
   
 ### Home Page
-![Alt](src\main\resources\screenshots\HomePageScreenshot.png)
+![Alt](src/main/resources/screenshots/HomePageScreenshot.png)
   
   
 ### LogIn 
-![Alt](src/main/resources/screenshots/HomePageScreenshot.png)
+![Alt](src/main/resources/screenshots/LogInScreenshot.png)
